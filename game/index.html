@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Midnight Archive — a stealth heist in three nights</title>
+<style>
+  html, body {
+    margin: 0; padding: 0; background: #0a0e1a; height: 100%;
+    font-family: Georgia, 'Times New Roman', serif;
+  }
+  body {
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    min-height: 100vh;
+  }
+  #wrap { text-align: center; }
+  h1 {
+    color: #ffd34d; font-size: 26px; letter-spacing: 4px; margin: 0 0 4px 0;
+    text-transform: uppercase; font-weight: normal;
+  }
+  #sub { color: #8b94ad; font-size: 13px; margin: 0 0 12px 0; font-style: italic; }
+  canvas {
+    display: block; background: #12172a; border: 2px solid #2c3550;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.6); image-rendering: auto;
+  }
+  #keys { color: #8b94ad; font-size: 12px; margin: 10px 0 0 0; font-family: sans-serif; }
+  #keys b { color: #e8e4d8; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <h1>Midnight Archive</h1>
+  <p id="sub">a stealth heist in three nights</p>
+  <canvas id="game" width="960" height="646"></canvas>
+  <p id="keys"><b>WASD / arrows</b> move &nbsp;·&nbsp; <b>Shift</b> sneak &nbsp;·&nbsp; <b>Space</b> sprint (loud!) &nbsp;·&nbsp; <b>Enter</b> start / next night &nbsp;·&nbsp; <b>R</b> retry</p>
+</div>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
